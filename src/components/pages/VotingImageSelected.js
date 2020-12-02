@@ -96,7 +96,7 @@ export default function VotingImageSelected() {
           <div className="row1">
               <h1 className="imgName">{image.imgTitle}</h1>
               <div className="heart" >
-                  <Heart isClick={isClick}  onClick={checkLikeStatus} />
+              <Heart isClick={isClick} onClick={() => {setClick(!isClick)}} />
               </div>
           </div>
           <h1 className="imgOwner">{image.artist}</h1>

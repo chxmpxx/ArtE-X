@@ -105,9 +105,9 @@ export default function ImageForm() {
     <div class="split2 right2">
       <div class="centered2">
         <h2 class="quote">Submission</h2>
-        <textarea className="title Box" rows='1' cols="50" type="text" placeholder="Image Name" onChange={handleImageTitle}></textarea><br/>
-        <textarea className="artist Box" rows='1' cols="50" type="text" placeholder="Artist" onChange={handleArtist}></textarea><br/>
-        <textarea className="detail Box" rows="6" cols="50" type="text" placeholder="Detail" onChange={handleDetail}></textarea><br/>
+        <textarea className="title Box1" rows='1' cols="50" type="text" placeholder="Image Name" onChange={handleImageTitle}></textarea><br/>
+        <textarea className="artist Box1" rows='1' cols="50" type="text" placeholder="Artist" onChange={handleArtist}></textarea><br/>
+        <textarea className="detail Box1" rows="6" cols="50" type="text" placeholder="Detail" onChange={handleDetail}></textarea><br/>
         <button className="uploadBtn" type="button" onClick={upload}>Submit</button>
       </div>
     </div>

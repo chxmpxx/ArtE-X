@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    scale: 1;
 }
 
 .split2 {
@@ -83,7 +84,8 @@
     color:rgb(94, 94, 94);;
 }
 
-.Box{
+.Box1{
+    border: 1px solid #262626;
     margin: 4px;
     font-size: 14px;
     border-radius: 20px;

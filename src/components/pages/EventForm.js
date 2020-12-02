@@ -70,24 +70,24 @@ export default function EventForm() {
         }
       }
 
-      return (
-        <>
-          <div class="split2 right2">
-            <div class="centered2">
-              <h2 class="quote2">Let's get started</h2>
-                <textarea className="title Box" rows='1' cols="50" type="text" placeholder="Event Title" onChange={handleName}></textarea><br/>
-                <textarea className="detail Box" rows="10" cols="50" type="text" placeholder="Detail" ></textarea>
-              <button className="uploadBtn" type="button" onClick={create}>Publish</button>
-            </div>
+    return (
+    <>
+      <div class="split2 right2">
+        <div class="centered2">
+          <h2 class="quote2">Let's get started</h2>
+            <textarea className="title Box1" rows='1' cols="50" type="text" placeholder="Event Title" onChange={handleName}></textarea><br/>
+            <textarea className="detail Box1" rows="10" cols="50" type="text" placeholder="Detail, Up to 500 words." maxLength="500" ></textarea>
+          <button className="uploadBtn" type="button" onClick={create}>Publish</button>
+        </div>
+      </div>
+      <label className="uploadArea">
+        <div class="split2 left2" style={{backgroundImage: `url(${showImage})`}} >
+          <div class="centered2">
+            <h5 className="leftText">{showImage === undefined ? 'Upload Your Event Thumbnail' : ''}</h5>
+            <input className="chooser" type="file" onChange={selectImage}></input>
           </div>
-          <label className="uploadArea">
-            <div class="split2 left2" style={{backgroundImage: `url(${showImage})`}} >
-              <div class="centered2">
-                <h5 className="leftText">{showImage === undefined ? 'Upload Your Event Thumbnail' : ''}</h5>
-                <input className="chooser" type="file" onChange={selectImage}></input>
-              </div>
-            </div>
-          </label>
-        </>
-        )
+        </div>
+      </label>
+    </>
+    )
 }

@@ -36,10 +36,12 @@
 }
 
 .cards__items{
+  list-style-type: none;
   margin-bottom: 24px;
 }
 
 .cards__item{
+
   display: flex;
   flex: 1;
   margin: 0 1rem;
